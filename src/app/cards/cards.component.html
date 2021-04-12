@@ -1,0 +1,18 @@
+<main class="main-cards">
+    <mat-accordion [hidden]="false">
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Self aware panel
+                </mat-panel-title>
+                <mat-panel-description>
+                    Currently I am {{panelOpenState ? 'open' : 'closed'}}
+                </mat-panel-description>
+            </mat-expansion-panel-header>
+            <p>I'm visible because I am open</p>
+            <span class="material-icons">
+              delete
+            </span>
+        </mat-expansion-panel>
+    </mat-accordion>
+</main>

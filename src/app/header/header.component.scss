@@ -1,0 +1,14 @@
+@import '../../styles/colors.scss';
+.navbar {
+    background-color: $color-lighter;
+    font-family: 'raleway';
+    font-weight: 400;
+    justify-content: space-between;
+    letter-spacing: .06rem;
+    .hamburger-menu {
+        display: none;
+    }
+    .links span {
+        padding-right: 1rem;
+    }
+}

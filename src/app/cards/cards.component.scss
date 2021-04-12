@@ -1,0 +1,9 @@
+@import '../../styles/colors.scss';
+.main-cards {
+    padding: 1rem;
+    mat-expansion-panel {
+        .material-icons {
+            margin-right: 1rem;
+        }
+    }
+}
