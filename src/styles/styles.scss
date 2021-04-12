@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 
+@import './colors.scss';
 html,
 body {
     height: 100%;
@@ -8,4 +9,20 @@ body {
 body {
     margin: 0;
     font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.rounded-button {
+    // display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-decoration: none;
+    //font-size: .4rem;
+    background-color: transparent;
+    color: $mako;
+    border: 1px solid $color-dark-light;
+    border-radius: 50%;
+    outline: none;
+    margin: .5rem;
 }
