@@ -7,4 +7,4 @@ export class InfoServices {
   getHeaderArr = () => this.headerSecArr = headerArr.slice(0);
 }
 
-const headerArr = [['home', 'about us', 'contact us'], 'logo url'];
+const headerArr = [['home', 'settings', 'support_agent'], 'logo url'];

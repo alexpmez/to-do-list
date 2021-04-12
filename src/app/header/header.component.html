@@ -4,6 +4,6 @@
     </button> -->
     <div>{{headerArr[1]}}</div>
     <div class="links">
-        <span *ngFor="let headerLink of headerArr[0];">{{headerLink}}</span>
+        <button *ngFor="let headerLink of headerArr[0];" class="rounded-button"><mat-icon>{{headerLink}}</mat-icon></button>
     </div>
 </mat-toolbar>
