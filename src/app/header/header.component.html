@@ -1,11 +1,9 @@
 <mat-toolbar class="navbar">
-    <button mat-icon-button class="example-icon hamburger-menu" aria-label="Example icon-button with menu icon">
-    <mat-icon>menu</mat-icon>
-  </button>
-    <div>logo</div>
+    <!-- <button mat-icon-button class="example-icon hamburger-menu" aria-label="Example icon-button with menu icon">
+     <mat-icon>menu</mat-icon>
+    </button> -->
+    <div>{{headerArr[1]}}</div>
     <div class="links">
-        <span>Home</span>
-        <span>About</span>
-        <span>Contact Us</span>
+        <span *ngFor="let headerLink of headerArr[0];">{{headerLink}}</span>
     </div>
 </mat-toolbar>

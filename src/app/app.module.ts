@@ -6,6 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
 import { HeaderComponent } from './header/header.component';
 import { CardsComponent } from './cards/cards.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { CardsComponent } from './cards/cards.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
