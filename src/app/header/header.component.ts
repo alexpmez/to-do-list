@@ -9,6 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   InfoServicesArr: any = this.InfoServices.getInfoServices();
+
+  // log = (val:string) => { 
+  //   console.log(val);
+  // }
+
   
   constructor(private InfoServices: InfoServices) {}
 

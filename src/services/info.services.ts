@@ -9,7 +9,10 @@ export class InfoServices {
 
 const infoServices = [
   {
-    'headerArr': [['home', 'settings', 'support_agent'], 'logo url'],
-    'sections': ['home', 'cards', 'contact-us', 'settings']
+    'headerInfo': {
+      'icons': ['home', 'settings', 'support_agent'],
+      'logo': 'logo url'
+    },
+    'sections': ['/home', '/contact', '/settings']
   }
 ];
