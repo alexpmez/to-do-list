@@ -2,7 +2,7 @@
     <div>{{headerArr[1]}}</div>
 
     <div class="links">
-        <button *ngFor="let headerLink of headerArr[0]" class="rounded-button">
+        <button *ngFor="let headerLink of headerArr[0]" class="rounded-button" ngClass="" routerLink="/">
             <mat-icon>{{headerLink}}</mat-icon>
             </button>
 
