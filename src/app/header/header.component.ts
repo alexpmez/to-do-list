@@ -8,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
   providers: [InfoServices]
 })
 export class HeaderComponent implements OnInit {
-  headerArr: any = this.InfoServices.getHeaderArr();
+  InfoServicesArr: any = this.InfoServices.getInfoServices();
   
   constructor(private InfoServices: InfoServices) {}
+
 
   ngOnInit(): void {
   }

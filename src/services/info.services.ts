@@ -2,9 +2,14 @@ import { Injectable } from '@angular/core';
 
 @Injectable()
 export class InfoServices {
-  headerSecArr: any = [];
+  infoServicesArr: any = [];
 
-  getHeaderArr = () => this.headerSecArr = headerArr.slice(0);
+  getInfoServices = () => this.infoServicesArr = infoServices.slice(0);
 }
 
-const headerArr = [['home', 'settings', 'support_agent'], 'logo url'];
+const infoServices = [
+  {
+    'headerArr': [['home', 'settings', 'support_agent'], 'logo url'],
+    'sections': ['home', 'cards', 'contact-us', 'settings']
+  }
+];
