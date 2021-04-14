@@ -14,7 +14,10 @@ export class HeaderComponent implements OnInit {
   //   console.log(val);
   // }
 
-  
+  getUrl = (url:string):string => {
+      return "/" + url;
+  }
+
   constructor(private InfoServices: InfoServices) {}
 
 

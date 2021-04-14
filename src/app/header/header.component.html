@@ -1,8 +1,8 @@
 <mat-toolbar class="navbar">
-    <div>{{InfoServicesArr[0].headerInfo.logo}}</div>
+    <div routerLink="/home">{{InfoServicesArr[0].headerInfo.logo}}</div>
 
     <div class="links">
-        <button *ngFor="let info of InfoServicesArr[0].headerInfo.icons; let i=index" class="rounded-button" [routerLink]=[InfoServicesArr[0].sections[i]]>
+        <button *ngFor="let info of InfoServicesArr[0].headerInfo.icons; let i=index" class="rounded-button" [routerLink]=[getUrl(InfoServicesArr[0].sections[i])]>
             <mat-icon>{{info}}</mat-icon>
             </button>
 

@@ -13,6 +13,6 @@ const infoServices = [
       'icons': ['home', 'settings', 'support_agent'],
       'logo': 'logo url'
     },
-    'sections': ['/home', '/contact', '/settings']
+    'sections': ['home', 'contact', 'settings']
   }
 ];
