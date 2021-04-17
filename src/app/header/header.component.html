@@ -1,9 +1,10 @@
 <mat-toolbar class="navbar">
-    <!-- <button mat-icon-button class="example-icon hamburger-menu" aria-label="Example icon-button with menu icon">
-     <mat-icon>menu</mat-icon>
-    </button> -->
-    <div>{{headerArr[1]}}</div>
+    <div routerLink="/home">{{InfoServicesArr[0].headerInfo.logo}}</div>
+
     <div class="links">
-        <button *ngFor="let headerLink of headerArr[0];" class="rounded-button"><mat-icon>{{headerLink}}</mat-icon></button>
+        <button *ngFor="let info of InfoServicesArr[0].headerInfo.icons; let i=index" class="rounded-button" [routerLink]=[getUrl(InfoServicesArr[0].sections[i])]>
+            <mat-icon>{{info}}</mat-icon>
+            </button>
+
     </div>
 </mat-toolbar>

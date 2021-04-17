@@ -8,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
   providers: [InfoServices]
 })
 export class HeaderComponent implements OnInit {
-  headerArr: any = this.InfoServices.getHeaderArr();
-  
+  InfoServicesArr: any = this.InfoServices.getInfoServices();
+
+  // log = (val:string) => { 
+  //   console.log(val);
+  // }
+
+  getUrl = (url:string):string => {
+      return "/" + url;
+  }
+
   constructor(private InfoServices: InfoServices) {}
+
 
   ngOnInit(): void {
   }
